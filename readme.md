@@ -1,4 +1,6 @@
-<center><h1> Fundamentals of Software Design and Development<br> Group Project </h1></center>
+<div style="text-align: center">
+<h1> Fundamentals of Software Design and Development<br> Group Project </h1>
+</div>
 
 ## Members
 > - Kowsiya Sri

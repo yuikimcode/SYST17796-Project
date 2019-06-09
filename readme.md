@@ -1,4 +1,4 @@
-# Fundamentals of Software Design and Development Group Project 
+<center><h1> Fundamentals of Software Design and Development<br> Group Project </h1></center>
 
 ## Members
 > - Kowsiya Sri

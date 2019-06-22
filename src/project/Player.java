@@ -1,48 +1,55 @@
-/**
- * SYST 17796 Project Summer 2019 Base code.
- * Students can modify and extend to implement their game.
- * Add your name as a modifier and the date!
- */
 package project;
 
-/**
- * A class that models each Player in the game. Players have an identifier, which should be unique.
- * @author megha,2019
- */
-public abstract class Player 
-{
-    private String playerID; //the unique ID for this player
-    
-    /**
-     * A constructor that allows you to set the player's unique ID
-     * @param name the unique ID to assign to this player.
-     */
-    public Player(String name)
-    {
-        playerID= name;
-    }
-    
-    /**
-     * @return the playerID
-     */
-    public String getPlayerID() 
-    {
-        return playerID;
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Player {
+
+    private final String name;
+    private ArrayList<Card> cards;
+    private int shuffleTiming;
+
+    public Player(String name) {
+        this.name = name;
+        this.cards = new ArrayList<>();
     }
 
-    /**
-     * Ensure that the playerID is unique
-     * @param givenID the playerID to set
-     */
-    public void setPlayerID(String givenID) 
-    {
-        playerID = givenID;
+    public String getPlayerID() {
+        return name;
     }
-    
-    /**
-     * The method to be instantiated when you subclass the Player class
-     * with your specific type of Player and filled in with logic to play your game.
-     */
-    public abstract void play();
-    
+
+    public void setCards(ArrayList<Card> cards) {
+        addCards(cards);
+        shuffleTiming = this.cards.size();
+    }
+
+    public ArrayList<Card> getCardInfo() {
+        return this.cards;
+    }
+
+    public Card getOneCard() {
+        if (shuffleTiming == 0) {
+            shuffle();
+        }
+        shuffleTiming--;
+        return this.cards.remove(0);
+    }
+
+    public void addCards(ArrayList<Card> cards) {
+        for (Card c : cards) {
+            this.cards.add(c);
+        }
+    }
+
+    public void shuffle() {
+        Collections.shuffle(this.cards);
+        shuffleTiming = this.cards.size();
+    }
+
+    @Override
+    public String toString() {
+        String format = "%s has %d cards.";
+        return String.format(format, name, this.cards.size());
+    }
+
 }

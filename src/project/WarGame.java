@@ -9,9 +9,9 @@ public class WarGame {
         System.out.println("============== War Game ==============");
         Scanner input = new Scanner(System.in);
         System.out.print("Please enter the name of the first player. : ");
-        String user1 = input.next();
+        String user1 = input.nextLine();
         System.out.print("Please enter the name of the second player. : ");
-        String user2 = input.next();
+        String user2 = input.nextLine();
 
         Player p1 = new Player(user1);
         Player p2 = new Player(user2);
@@ -79,14 +79,9 @@ public class WarGame {
             }
 
             System.out.printf("    In this turn, %s won. (get %d cards)%n", turnWinner, tmp.size());
-
             System.out.println("Next Turn?");
-            if (count == 1) {
-                input.nextLine();
-            }
             input.nextLine();
             count++;
         }
-
     }
 }

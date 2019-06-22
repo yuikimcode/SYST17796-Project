@@ -9,4 +9,4 @@
 > - Kyunghee Kim
 
 ## Class Diagram
-![classDiagram](./src/materials/images/ClassDiagram.PNG);
+![classDiagram](./src/materials/images/ClassDiagram_v2.PNG);

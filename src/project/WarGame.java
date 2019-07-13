@@ -57,7 +57,7 @@ public class WarGame {
                 tmp.add(c2);
                 String format = "    %s\'s card %s / %s\'s card %s%n";
                 System.out.printf(format, user1, c1, user2, c2);
-                if (c1.getNum() == c2.getNum()) {
+                if (c1.getNum() == c2.getNum() && p1.getCardInfo().size() > 2 && p1.getCardInfo().size() > 2) {
                     System.out.println("    next card overlay");
                     c1 = p1.getOneCard();
                     c2 = p2.getOneCard();

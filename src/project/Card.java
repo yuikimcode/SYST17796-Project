@@ -40,7 +40,7 @@ public class Card {
 
         if (null != this.value) switch (this.value) {
             case ACE:
-                num = 14;
+                num = 1;
                 break;
             case TWO:
                 num = 2;

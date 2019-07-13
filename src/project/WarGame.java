@@ -13,9 +13,9 @@ public class WarGame {
     public static void main(String[] args) {
         
         Game war = new Game("war");
-        String play = "y";
+        String play;
         do{
-            war.play();s
+            war.play();
             Scanner in = new Scanner(System.in);
             System.out.println("Want to play again? \nType 'y' for yes or 'n'! for No!");
             play = in.next().toLowerCase();

@@ -1,3 +1,13 @@
+/**
+ * A class to be used as the base Card class for the project. Must be general
+ * enough to be instantiated for any Card game. Students wishing to add to the code 
+ * should remember to add themselves as a modifier.
+ * @author megha, 2019
+ * @modifier Sehyun, 2019
+ * @modifier Kowsiya, 2019
+ */
+
+
 package project;
 
 public class Card {

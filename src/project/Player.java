@@ -1,3 +1,10 @@
+/**
+ * A class that models each Player in the game. Players have an identifier, which should be unique.
+ * @author megha,2019
+ * @modifier Sehyun, 2019
+ * @modifier Kowsiya, 2019
+ */
+
 package project;
 
 import java.util.ArrayList;

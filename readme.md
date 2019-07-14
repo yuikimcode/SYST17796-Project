@@ -8,5 +8,5 @@
 > - Jisung Kang
 > - Kyunghee Kim
 
-## Class Diagram
-![classDiagram](./src/materials/images/ClassDiagram_v2.jpg);
+## War Game
+[![How to Play War](http://img.youtube.com/vi/23QQ1Hz2-jY/0.jpg)](http://www.youtube.com/watch?v=23QQ1Hz2-jY "How to Play War")

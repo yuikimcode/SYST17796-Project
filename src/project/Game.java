@@ -133,7 +133,7 @@ public class Game
             }
 
             System.out.printf("    In this turn, %s won. (get %d cards)%n", turnWinner, tmp.size());
-            System.out.println("Next Turn?");
+            System.out.println("Next Turn? Press Enter!");
             input.nextLine();
             count++;
         }

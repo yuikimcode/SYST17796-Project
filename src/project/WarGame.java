@@ -17,7 +17,7 @@ public class WarGame {
         do{
             war.play();
             Scanner in = new Scanner(System.in);
-            System.out.println("Want to play again? \nType 'y' for yes or 'n'! for No!");
+            System.out.println("\nWant to play again? \nType 'y' for yes or 'n'! for No!");
             play = in.next().toLowerCase();
         }while(play.equals("y")); 
          

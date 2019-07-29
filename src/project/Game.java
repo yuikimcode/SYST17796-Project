@@ -98,8 +98,7 @@ public class Game {
         while (true) {
 
             if (p1.getCardInfo().isEmpty() || p2.getCardInfo().isEmpty()) {
-                String winner = p1.getCardInfo().isEmpty() ? user2 : user1;
-                System.out.printf("The final winner is %s!%n", winner);
+                System.out.printf("The final winner is %s!%n", checkFinalWinner(p1, p2));
                 break;
             }
 
@@ -162,4 +161,10 @@ public class Game {
 
     }
 
+    /**
+     * Check final winner.
+     */
+    public String checkFinalWinner(Player p1, Player p2) {
+        return p1.getCardInfo().isEmpty() ? p2.getPlayerName() : p1.getPlayerName();
+    }
 }

@@ -21,6 +21,6 @@ public class WarGame {
             play = in.next().toLowerCase();
         }while(play.equals("y")); 
          
-        System.out.println("Thank you for palying!");
+        System.out.println("Thank you for playing!");
     }     
 }

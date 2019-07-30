@@ -59,16 +59,24 @@ public class Game {
         String user1 = input.nextLine();
         System.out.print("Please enter the name of the second player. : ");
         String user2 = input.nextLine();
-        System.out.print("Do you want to place a maximum turn limit? (Y/N) : ");
-        String answer = input.nextLine().toLowerCase();
-
+        String answer= "";
         int limitNum = 0;
-        if (answer.equals("y")) {
-            System.out.print("How maximum turn do you want? : ");
-            limitNum = input.nextInt();
-            input.nextLine();
-        }
+        
+        while (true) {
+            System.out.print("Do you want to place a maximum turn limit? (Y/N) : ");
+            answer = input.nextLine().toLowerCase();
 
+            if (answer.equals("y") || answer.equals("n")) {
+                if (answer.equals("y")) {
+                    System.out.print("How maximum turn do you want? : ");
+                    limitNum = input.nextInt();
+                    input.nextLine();
+                    break;
+                }break;
+            }else{
+                System.out.println("only (Y/N) is accepted.");
+            }
+        }
         // Sets the players
         Player p1 = new Player(user1);
         Player p2 = new Player(user2);
